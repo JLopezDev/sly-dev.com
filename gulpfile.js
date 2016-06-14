@@ -11,6 +11,11 @@ var elixir = require('laravel-elixir');
  |
  */
 
-elixir(function(mix) {
-    mix.sass('app.scss');
+elixir(function (mix) {
+  mix
+  .browserSync({proxy: 'homestead.app'})
+  .scripts([
+    '../lib/jquery/dist/jquery.min.js'
+  ])
+  .sass('app.scss');
 });
