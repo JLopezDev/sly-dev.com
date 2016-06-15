@@ -348,9 +348,12 @@ table {
 EXAMPLE - Declare Open Sans font-face (Remember to add the font files to $font_path)
 @include declare-font-face("Open Sans", "opensans-regular-webfont");
 */
+html {
+  font-size: 62.5%; }
+
 body {
   background: #fff;
-  font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 1.4rem/2rem "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #444;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
@@ -1299,5 +1302,31 @@ table {
 .table-hover tbody tr:hover > td,
 .table-hover tbody tr:hover > th {
   background-color: #999; }
+
+.paginator {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+  .paginator__link {
+    display: block;
+    margin-bottom: 0;
+    min-width: 2rem;
+    height: 2rem;
+    background-color: #999;
+    text-align: center;
+    text-decoration: none; }
+    .paginator__link:first-child {
+      border-top-left-radius: .3rem;
+      border-bottom-left-radius: .3rem; }
+    .paginator__link:last-child {
+      border-top-right-radius: .3rem;
+      border-bottom-right-radius: .3rem; }
+    .paginator__link:hover {
+      background-color: #ccc; }
+    .paginator__link--active {
+      background-color: #aaa; }
+    .paginator__link--disabled {
+      color: #bbb; }
 
 /*# sourceMappingURL=app.css.map */

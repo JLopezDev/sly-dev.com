@@ -13,7 +13,7 @@ var elixir = require('laravel-elixir');
 
 elixir(function (mix) {
   mix
-  .browserSync({proxy: 'homestead.app'})
+  .browserSync({proxy: 'sly-dev.app'})
   .scripts([
     '../lib/jquery/dist/jquery.min.js'
   ])
