@@ -19,3 +19,6 @@ Route::get('blog', 'BlogController@index');
 Route::get('blog/{slug}', 'BlogController@showPost');
 
 Route::get('sandbox', 'SandboxController@index');
+
+Route::get('hearthstone/cards', 'HearthstoneController@show');
+Route::get('hearthstone/cards/import', 'HearthstoneController@import');
